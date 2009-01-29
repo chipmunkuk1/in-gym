@@ -1,0 +1,199 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        BOTTOMMARGIN, 178
+        HORZGUIDE, 67
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 267, 109
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About in_GYM"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDCLOSE,64,85,196,16,0,WS_EX_STATICEDGE
+    CONTROL         108,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE | 
+                    SS_SUNKEN,7,7,51,95
+    LTEXT           "in_GYM is a player for the dumps of Genesis music from popular emulators such as Genecyst, DGen, etc....\n\nAuthor:\tChipmunk\nGUI:\tNitro187",
+                    IDC_STATIC,64,8,196,33,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Zophars Domain - Emulation News",IDC_WWWZOPHAR,64,65,
+                    196,16,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Chipmunk's Corner - Homepage",IDC_CHIPMUNK,64,47,196,16,
+                    0,WS_EX_STATICEDGE
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 177, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "in_gym Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,113,164,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,164,50,14
+    GROUPBOX        "Sampling Frequency",IDC_STATIC,7,0,85,67
+    LISTBOX         IDC_LSTRATE,13,11,73,56,WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Replay Rate",IDC_STATIC,96,0,68,67
+    CONTROL         "x 0.83 (50Hz)",IDC_REPLAYRATE1,"Button",
+                    BS_AUTORADIOBUTTON,101,19,60,8
+    CONTROL         "x 1.00 (60Hz)",IDC_REPLAYRATE2,"Button",
+                    BS_AUTORADIOBUTTON,101,31,59,8
+    CONTROL         "x 1.17 (70Hz)",IDC_REPLAYRATE3,"Button",
+                    BS_AUTORADIOBUTTON,101,43,57,8
+    GROUPBOX        "File Type Options",IDC_STATIC,7,67,157,26
+    CONTROL         "Disable VGM Support",IDC_DISABLE_VGM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,78,146,8
+    GROUPBOX        "Header Options",IDC_STATIC,7,97,157,29
+    CONTROL         "Show title from header",IDC_CHKGYMX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,111,141,8
+    GROUPBOX        "MJazz Options",IDC_STATIC,7,130,157,29
+    CONTROL         "Enabled",IDC_CHKMJAZZ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,143,126,8
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,1,6,4
+ PRODUCTVERSION 0,1,6,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "Based upon the DGEN sound code and the DOS GYM Player   !! NEW !! VGM support!"
+            VALUE "FileDescription", "in_gym (Sega Genesis (Megadrive) YM Dump Player) (Sega Master System / Game Gear PSG Player)"
+            VALUE "FileVersion", "0, 1, 6, 4"
+            VALUE "InternalName", "in_npsg"
+            VALUE "LegalCopyright", "Copyright © 1999-2003 Chipmunk"
+            VALUE "OriginalFilename", "in_gym.dll"
+            VALUE "ProductName", "in_gym"
+            VALUE "ProductVersion", "0, 1, 6, 4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IN_GYM_BMP              BITMAP                  "ingym.bmp"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
